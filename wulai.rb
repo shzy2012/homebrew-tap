@@ -4,13 +4,13 @@
 class Wulai < Formula
   desc "wulai bot client with cmdline"
   homepage "https://github.com/shzy2012/wulai"
-  url "https://github.com/shzy2012/wulai/releases/download/v1.0.0/wulai.tar.gz"
-  sha256 "79e4ddf6ea445cbb27d4e365ab102ce8351941d0635e3bb301241f1251bc0b99"
+  url "https://github.com/shzy2012/wulai/releases/download/v1.0.1/wulai.tar.gz"
+  sha256 "8d13955f81fd43cef9efde9d007532fa5bee89dfc68fe835e0945dd31fcddbf3"
 
   # depends_on "cmake" => :build
 
   def install
-	  bin.install "wulai"
+	  bin.install  "wulai"
   end
 
   test do
