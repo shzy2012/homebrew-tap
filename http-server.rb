@@ -2,15 +2,15 @@
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class HttpServer < Formula
-  desc "http server for www static"
+  desc "简单、高性能的静态文件服务器"
   homepage "https://github.com/shzy2012/http-server"
-  url "https://github.com/shzy2012/http-server/files/3603545/http-server-1.0.tar.gz"
-  sha256 "a41344a42da4a2817a194226c6644223f58dcca783831a2fa57ff4c969e7c4db"
+  url "https://github.com/shzy2012/http-server/releases/download/v1.1/http-server.tar.gz"
+  sha256 "9467f44eedacbe3ad4ac7515306a8e32c35fde09be50c9e4e2cac4fed65b3649"
 
   # depends_on "cmake" => :build
 
   def install
-      bin.install "http-server"
+     bin.install "http-server"
   end
 
   test do
