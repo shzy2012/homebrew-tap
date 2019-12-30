@@ -2,15 +2,15 @@
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Wulai < Formula
-  desc "wulai bot client with cmdline"
-  homepage "https://github.com/shzy2012/wulai"
-  url "https://github.com/shzy2012/wulai/releases/download/v1.0.3/wulai.tar.gz"
-  sha256 "f9dc6cd938d723511cc354c6e3fe45928f416e048b907ce8105675360422d6a1"
+  desc "吾来机器人cmdline客户端"
+  homepage ""
+  url "https://github.com/shzy2012/wulai/releases/download/v1.0.0/wulai.tar.gz"
+  sha256 "4d124a4acf00dc7f0b2f55a0baf82d9686f2bf7fd0a0be987964d8de4e42d9f8"
 
   # depends_on "cmake" => :build
 
   def install
-	  bin.install "wulai"
+          bin.install "wulai"
   end
 
   test do
