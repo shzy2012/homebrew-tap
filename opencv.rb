@@ -1,13 +1,20 @@
 class Opencv < Formula
-  desc "Open Source Computer Vision Library"
-  homepage "https://opencv.org"
-  url "https://github.com/opencv/opencv/archive/4.5.1.tar.gz"
-  sha256 "e27fe5b168918ab60d58d7ace2bd82dd14a4d0bd1d3ae182952c2113f5637513"
+  desc "Open source computer vision library"
+  homepage "https://opencv.org/"
+  url "https://github.com/opencv/opencv/archive/4.5.3.tar.gz"
+  sha256 "77f616ae4bea416674d8c373984b20c8bd55e7db887fd38c6df73463a0647bab"
   license "Apache-2.0"
 
   livecheck do
     url :stable
     regex(/^v?(\d+(?:\.\d+)+)$/i)
+  end
+
+  bottle do
+    sha256 arm64_big_sur: "c55517f0abf94440d6ddc3cfca258851d4483cac11d904c0efcc7188ae44b8ac"
+    sha256 big_sur:       "1b0af1561fcbcbb556dd45a431350748cf1e7f50d4181dfa375352923308c988"
+    sha256 catalina:      "56f5d8a1e3de45164746af7a67d18f45db18b3ce0fc294e9444e2ae2d7038911"
+    sha256 mojave:        "da7b4e5954e9d65bad7966882b61e310ddd4d7ee47e7fc2147586a773de2d794"
   end
 
   depends_on "cmake" => :build
@@ -30,8 +37,8 @@ class Opencv < Formula
   depends_on "webp"
 
   resource "contrib" do
-    url "https://github.com/opencv/opencv_contrib/archive/4.5.1.tar.gz"
-    sha256 "12c3b1ddd0b8c1a7da5b743590a288df0934e5cef243e036ca290c2e45e425f5"
+    url "https://github.com/opencv/opencv_contrib/archive/4.5.3.tar.gz"
+    sha256 "73da052fd10e73aaba2560eaff10cc5177e2dcc58b27f8aedf7c649e24c233bc"
   end
 
   def install
